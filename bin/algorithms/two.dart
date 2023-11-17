@@ -94,6 +94,6 @@ class Two extends Algorithm {
     print(
         'Sortie: Si le vaisseau ${ship.name} parcours $distance km en $duration jours à ${ship.speed} km/h, cela coûterait $price€.');
 
-    return price.toString();
+    return '$price€';
   }
 }

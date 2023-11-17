@@ -4,6 +4,7 @@ import 'algorithms/base.dart';
 import 'algorithms/five/base.dart';
 import 'algorithms/four.dart';
 import 'algorithms/one.dart';
+import 'algorithms/tests.dart';
 import 'algorithms/three/base.dart';
 import 'algorithms/two.dart';
 
@@ -95,7 +96,7 @@ void main(List<String> arguments) {
               algorithm = Five();
               break;
             case 'tests':
-              //algorithm = Tests();
+              algorithm = Tests();
               break;
             default:
               print('Unknown algorithm');

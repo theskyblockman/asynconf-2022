@@ -60,8 +60,6 @@ class Four extends Algorithm {
         Base64ChainInputManager<dynamic>(chain: JSONInputManager()),
         premadeInputs: premadeInputs);
 
-    print(input);
-
     List<Star> stars = [];
 
     for (Map<String, dynamic> rawStar in input) {
@@ -87,7 +85,7 @@ class Four extends Algorithm {
     List<String> finalSortedStars = [];
 
     for(final star in stars) {
-      finalSortedStars.add('Nom : ${star.name}\nTaille : ${star.size}km\nMasse : ${star.mass} tonnes\nDistance à l\'étoile : ${star.distanceToStar}km');
+      finalSortedStars.add('Nom : ${star.name}\nTaille : ${star.size}km\nMasse : ${star.mass} tonnes\nDistance à l’étoile : ${star.distanceToStar}km');
     }
 
     String finalOutput = finalSortedStars.join('\n\n');
@@ -98,5 +96,3 @@ class Four extends Algorithm {
     return finalOutput;
   }
 }
-
-// TEST VALUE: WwogICAgewogICAgICAgICJuYW1lIjogIlNpbG9wcCIsCiAgICAgICAgInNpemUiOiAxNDkyNCwKICAgICAgICAiZGlzdGFuY2VUb1N0YXIiOiA5MDI0ODQ1MiwKICAgICAgICAibWFzcyI6IDE5NDUzMgogICAgfSwKICAgIHsKICAgICAgICAibmFtZSI6ICJBc3RyaW9uIiwKICAgICAgICAic2l6ZSI6IDE1MjAwMCwKICAgICAgICAiZGlzdGFuY2VUb1N0YXIiOiAxNDkzMDIsCiAgICAgICAgIm1hc3MiOiAyMTk0CiAgICB9LAogICAgewogICAgICAgICJuYW1lIjogIlZhbGVudXMiLAogICAgICAgICJzaXplIjogMjkwNDUwLAogICAgICAgICJkaXN0YW5jZVRvU3RhciI6IDIwOTQ4NTkzNDU1LAogICAgICAgICJtYXNzIjogMTk1MjkzCiAgICB9Cl0=

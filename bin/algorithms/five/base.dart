@@ -132,8 +132,7 @@ class Five extends Algorithm {
 
     String output = runPathfinding(playingFieldLines);
 
-    print('Sortie:');
-    print(output);
+    print('Sortie: $output');
 
     return output;
   }
